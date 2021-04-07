@@ -13,7 +13,8 @@ const ResultsList = ({ title, results }) => {
     >
       <Text style={styles.title}>{title}</Text>
       <FlatList
-        showsVerticalScrollIndicator
+        // showsVerticalScrollIndicator
+        // horizontal
         data={results}
         keyExtractor={(results, index) => index.toString()}
         renderItem={({ item }) => {

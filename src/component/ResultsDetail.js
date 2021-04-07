@@ -5,11 +5,12 @@ const ResultsDetail = ({ result }) => {
   return (
     <View style={styles.container}>
       <Image style={styles.Image} source={{ uri: result.artworkUrl100 }} />
-      <Text style={styles.text}>{result.collectionCensoredName}</Text>
+      <Text style={styles.text}> America:{result.collectionCensoredName}</Text>
       <Text style={styles.text}> Genre:{result.primaryGenreName}</Text>
       <Text style={styles.text}> Artist:{result.artistName}</Text>
-      <Text style={styles.text}>country:{result.country}</Text>
-      <Text style={styles.text}>currency:{result.currency}</Text>
+      <Text style={styles.text}>Country:{result.country}</Text>
+      <Text style={styles.text}>Currency:{result.currency}</Text>
+      <Text style={styles.text}>Price:{result.collectionPrice}</Text>
     </View>
   );
 };
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     paddingBottom: 10,
     paddingTop: 10,
-    borderWidth: 6,
+    borderWidth: 2,
     borderColor: "black",
     width: "80%",
     backgroundColor: "yellow",
@@ -32,8 +33,8 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     height: 180,
     left: 70,
-    right: 50,
-    resizeMode: "contain",
+    // right: 130,
+    // resizeMode: "contain",
   },
   text: {
     top: 5,
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     textAlign: "center",
-    paddingBottom: 10,
+    // paddingBottom: 10,
     // textAlignVertical: "center",
   },
 });
